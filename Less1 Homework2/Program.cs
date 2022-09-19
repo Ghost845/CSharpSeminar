@@ -15,7 +15,10 @@ int thirdNum = Convert.ToInt32(Console.ReadLine());
 
 if (firstNum > secondNum)
 {
-    Console.Write(firstNum);
+    if (firstNum > thirdNum)
+    {
+        Console.Write(firstNum);
+    }
 }
 else
 {
