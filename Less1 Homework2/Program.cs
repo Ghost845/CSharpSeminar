@@ -13,21 +13,32 @@ int secondNum = Convert.ToInt32(Console.ReadLine());
 Console.Write("Напишите третье число для сравнения: ");
 int thirdNum = Convert.ToInt32(Console.ReadLine());
 
-if (firstNum > secondNum)
+//  Не слишком оптимальный вариант: if (firstNum > secondNum)
+// {
+//     if (firstNum > thirdNum)
+//     {
+//         Console.Write(firstNum);
+//     }
+// }
+// else
+// {
+//     if (secondNum > thirdNum)
+//     {
+//         Console.Write(secondNum);
+//     }
+//     else
+//     {
+//         Console.Write(thirdNum);
+//     }
+// }
+
+int max = firstNum;
+if (secondNum > max)
 {
-    if (firstNum > thirdNum)
-    {
-        Console.Write(firstNum);
-    }
+    max = secondNum;
 }
-else
+if (thirdNum > max)
 {
-    if (secondNum > thirdNum)
-    {
-        Console.Write(secondNum);
-    }
-    else
-    {
-        Console.Write(thirdNum);
-    }
+    max = thirdNum;
 }
+Console.WriteLine($"Максимальное число: {max}");
