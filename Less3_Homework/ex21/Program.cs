@@ -22,6 +22,5 @@ int[] A = new int[] {x1, y1, z1};
 int[] B = new int[] {x2, y2, z2};
 double d = Math.Sqrt(Math.Pow(B[0] - A[0], 2) + Math.Pow(B[1] - A[1], 2) + Math.Pow(B[2] + A[2], 2));
 Console.Write($"A ({x1}, {y1}, {z1}); B ({x2}, {y2}, {z2}) -> {Math.Round(d, 2)}");
-
 // double d = Math.Sqrt(Math.Pow(x2 - x1, 2) + Math.Pow(y2 - y1, 2) + Math.Pow(z2 - z1, 2));
 // Console.Write($"A ({x1}, {y1}, {z1}); B ({x2}, {y2}, {z2}) -> {Math.Round(d, 2)}");
