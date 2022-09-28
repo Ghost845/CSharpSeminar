@@ -4,8 +4,21 @@
 // 5 -> 1, 8, 27, 64, 125
 
 Console.Clear();
-Console.Write("Напишите любое число: ");
-int num = Convert.ToInt32(Console.ReadLine());
+Console.WriteLine("Введите любое число: ");
+int n = Convert.ToInt32(Console.ReadLine());
+int[] array = new int[n];
+int length = n;
+int i = 1;
 
-for(int i = 1; i < num + 1; i++)
+while ( i < length )
+{
     Console.Write($"{Math.Pow(i, 3)} ");
+    i++;
+}
+
+// Без массива
+// Console.Write("Введите любое число: ");
+// int num = Convert.ToInt32(Console.ReadLine());
+
+// for(int i = 1; i < num + 1; i++)
+//     Console.Write($"{Math.Pow(i, 3)} ");
