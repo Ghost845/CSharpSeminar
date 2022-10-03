@@ -13,22 +13,27 @@ double[] array(int z)
     double[] newA = new double [z];
     for(int i = 0; i < z; i++)
     {
-        newA[i] = new Random().Next(a, b);
+        newA[i] = new Random().Next(a, b + 1);
         Console.Write(newA[i] + " ");
     }
     return newA;
 }
 Console.Write("Введите количество элементов массива: ");
 int z = Convert.ToInt32(Console.ReadLine());
-Console.Write(array());
+double[] newArr = array(z);
 
-double maxN = newA[1];
-double minN = newA[1];
+double maxN = newArr[1];
+double minN = newArr[1];
 
-// double[] max()
-// {
-//     while()
-
-
-//     return maxNum;
-// }
+for(int i = 0; i < z; i++)
+{
+    if(newArr[i] > maxN)
+    {
+        maxN = newArr[i];
+    }
+    else if(newArr[i] < minN)
+    {
+        minN = newArr[i];
+    }
+}
+Console.Write($"-> {maxN - minN}");
