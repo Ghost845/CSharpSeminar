@@ -22,10 +22,6 @@ int[] array(int z)
 
 Console.Write("Введите количество элементов массива: ");
 int x = Convert.ToInt32(Console.ReadLine());
-// Console.Write("Введите минимальное значение массива: ");
-// int a = Convert.ToInt32(Console.ReadLine());
-// Console.Write("Введите максимальное значение массива: ");
-// int b = Convert.ToInt32(Console.ReadLine());
 int[] arr = array(x);
 int sum = 0;
 for(int i = 0; i < x; i++)
